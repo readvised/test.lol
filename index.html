@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="⛧𓃶" property="og:title"/>
+    <meta content="ᶠᶸᶜᵏᵧₒᵤ" property="og:description" />
+    <meta content="" property="og:image" />
+    <meta content="#303135" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="../kit.fontawesome.com/38359ed66d.js" crossorigin="anonymous"></script>
+    <title>Smokey Just Better</title>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        h1 {
+            font-size: 45px;
+            font-family: derk;
+            text-shadow: 0 0 0.40em #bababa;
+        }
+
+        #typed-text {
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+            text-shadow: 0 0 0.10em white;
+        }
+    </style>
+</head>
+<body oncontextmenu="false">
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+    <div id="center">
+        <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+            <span class="no-hover">[Click to Access]</span>
+            <span class="hover">[Click to Access]</span>
+        </label>
+    </div>
+</div>
+<audio loop preload="auto" id="audio">
+    <source src="assets/audio/Imagination.mp3" type="audio/mp3">
+</audio>
+<video muted loop playsinline preload="auto" class="fullscreen bg-video" id="video">
+    <source src="assets/img/01.mp4" type="video/mp4">
+</video>
+<section class="fullscreen text-content">
+<div id="center">
+    <h1>Smokey</h1>
+</div>
+<div id="center">
+    <br><br><br><br>
+    <span id="typed-text"></span>
+</div>
+<div class="snowflakes">
+    <div class="snowflake">
+        <img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+    <div class="snowflake">
+        #0101<img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+    <div class="snowflake">
+        <img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+    <div class="snowflake">
+        #0101<img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+    <div class="snowflake">
+        <img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+    <div class="snowflake">
+        #0101<img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+    <div class="snowflake">
+        <img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+    <div class="snowflake">
+        #0101<img src="https://cdn3.emoji.gg/emojis/1168-chrome-star.gif" />
+    </div>
+</div>
+</section>
+<div id="socials">
+    <ul>
+        [
+        <a class="text" href="https://discord.gg/tDSprnwHUD" target="_blank">discord</a>
+        |
+        <a class="text" href="https://www.instagram.com/smokey01k/">instagram</a>
+        |
+        <a class="text" href="https://t.me/readvised">telegram</a>
+        ]
+    </ul>
+</div>
+<script>
+
+    fetch('https://api.ipify.org/?format=json')
+        .then(response => response.json())
+        .then(data => {
+            $.getJSON('https://ipinfo.io/' + data.ip + '/json')
+                .then(location => {
+                    var typed = new Typed('#typed-text', {
+                        strings: [`#0101 Just better`, `I run com`, `I wonder what's the weather like in ${location.region} lol`],
+                        typeSpeed: 70,
+                        backSpeed: 50,
+                        loop: true
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching region:', error);
+                });
+        })
+        .catch(error => {
+            console.error('Error fetching IP address:', error);
+        });
+</script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/cursortext.js"></script>
+<script src="disable_inspect.html"></script>
+</body>
+
+
+</html>
+
+<script>
+    
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        alert('Right click your ass off the website if you think ima sit here and watch you skid it ~ Smokey');
+    });
+
+    
+    document.onkeydown = function (e) {
+        if (e.keyCode == 123) {
+            alert('F12 a salad you fat bitch ~ Smokey');
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            alert('Crtl + Shit + I?? How about you control your diet you obese bitch  ~ Smokey');
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            alert('You tried "Crtl + Shit + C" How about you C some bitches lol ~ Smokey');
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            alert('Who tf opens inspect elemeant with "Crtl + Shit + J" Your such a nerd 💀💀');
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            alert('Uh oh, Is that a skidder i see??  ~ Smokey');
+            return false;
+        }
+    }
+</script>
